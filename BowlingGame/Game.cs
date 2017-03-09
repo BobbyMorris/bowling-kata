@@ -22,7 +22,7 @@ namespace BowlingGame
             int frameIndex = 0;
             for (int frame = 0; frame < 10; frame++)
             {
-                if (IsStrike(frameIndex)) // strike
+                if (IsStrike(frameIndex))
                 {
                     score += 10 + StrikeBonus(frameIndex);
                     frameIndex++;

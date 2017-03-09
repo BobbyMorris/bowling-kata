@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace BowlingGame
 {
-    public class Class1
+    public class Game
     {
+        public void Roll(int pins) { }
+
+        public int Score()
+        {
+            return 0;
+        }
     }
 }

@@ -49,6 +49,21 @@ namespace BowlingGame
             Assert.AreEqual(16, g.Score());
         }
 
+        [Test]
+        public void TestOneStrike()
+        {
+            RollStrike();
+            g.Roll(3);
+            g.Roll(4);
+            RollMany(16, 0);
+            Assert.AreEqual(24, g.Score());
+        }
+
+        private void RollStrike()
+        {
+            g.Roll(10);
+        }
+
         private void RollSpare()
         {
             g.Roll(5);
